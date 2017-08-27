@@ -4,22 +4,61 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-    <script>
-        var socket = io('http://localhost:8080');
-        socket.on('connect', function(){
-            console.log('Connected');
-            socket.emit('message', 'Hello, i"m client');
-        });
-        socket.on('message', function(data){
-            console.log(data);
-        });
-        socket.on('disconnect', function(){
-            console.log('Disconnected');
-        });
-    </script>
-</head>
-<body>
 
-</body>
+    <link href="css/style.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<div class="container">
+    <header class="header clearfix">
+        <div class="logo">
+            Msg Engine
+        </div>
+    </header>
+
+    <main>
+        <div class="chat">
+            <div class="chat-header">
+                <div class="title">
+                    Общий чат
+                </div>
+            </div>
+
+            <div class="chat-components">
+                <div class="chat-messages">
+                    <!--<div class="message">-->
+                        <!--<div class="message-header">-->
+                            <!--<div class="nickname">Vladimir</div>-->
+                            <!--<div class="send-time">17:52</div>-->
+                        <!--</div>-->
+                        <!--<div class="content">Привет, с вами Владимир!</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="controls">
+                    <div class="chat-writer">
+                        <textarea id="writer" placeholder="Введите сообщение..."></textarea>
+                    </div>
+                    <div class="chat-sender">
+                        <button id="sender">Отправить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            Tzendos and Orchidea group
+        </div>
+    </footer>
+</div>
+
+
 </html>

@@ -1,0 +1,116 @@
+
+body {
+    color: white;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header, .footer {
+    height: 30%;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+.chat {
+    color: black;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.chat-header {
+    margin: 0;
+    border: 1px solid black;
+    padding: 15px;
+
+    font-size: 18px;
+}
+
+.chat-components {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.chat-sender,
+.chat-writer {
+    display: inline-block;
+}
+
+textarea {
+    float: left;
+    width: 450px;
+    height: 100px;
+}
+
+.chat-messages {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nickname,
+.send-time {
+    display: inline-block;
+}
+
+.nickname {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.send-time {
+    font-style: italic;
+}
+
+.message {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.message-header {
+    display: inline-block;
+    width: 300px;
+}
+
+.controls {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+button {
+    float: right;
+    width: 100px;
+    height: 105px;
+    margin-left: 10px;
+}
+
+.logo {
+    float: left;
+    margin: 20px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    text-align: center;
+    height: 35px;
+    padding-top: 15px;
+}
